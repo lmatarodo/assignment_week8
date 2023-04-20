@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for start in {a..z}; do
+    find files -type f -iname "$start" -exec mv {} "./$start" \;
+done
